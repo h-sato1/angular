@@ -1,0 +1,19 @@
+<h1>Angular Router App</h1>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+  <h1>メニュー</h1>
+  <ul>
+    <li><a routerLink="hoge" routerLinkActive="active">Hoge Component</a></li>
+    <li><a routerLink="fuge" routerLinkActive="active">Fuge Component</a></li>
+    <li><a routerLink="test" routerLinkActive="active">Second Component</a></li>
+  </ul>
+</nav>
+
+<button (click)="onClicked()">ボタン</button>
+
+{{index}}
+
+<br><br>
+
+<input [(ngModel)]="firstName">
+{{firstName}}
